@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="style/firework.css">
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans|PT+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
     <div class="game-div">
-      <div class="game-div__duck"></div>
+        <div class="game-div__duck"></div>
     </div>
     <section>
-      <br />
-      <div class="button">START GAME</div>
-      <div class="score">
-        <span id="keyboard">00</span> : <span id="mouse">00</span>
-      </div>
+        <div class="pyro">
+            <div class="before"></div>
+            <div class="after"></div>
+        </div>
+        <br>
+        <div class="button">START</div>
+        <div class="wrapper">
+            <div class="button-reset">RESET</div>
+            <div class="button-reload">RELOAD</div>
+        </div>
+        <div class="score">
+            <span id="keyboard">00</span><span> : </span><span id="mouse">00</span>
+        </div>
     </section>
+
     <script src="js/main.js"></script>
-  </body>
+</body>
+
 </html>
