@@ -1,5 +1,5 @@
-let positionLeft = 0;
-let positionTop = 0;
+let positionLeft = 270;
+let positionTop = 190;
 let timer;
 let scoreMouse = 0;
 let scoreKeyb = 0;
@@ -17,8 +17,10 @@ const section = document.querySelector("section");
 const pyro = document.querySelector(".pyro");
 pyro.remove();
 
-targetz.style.display = "initial";
-gameDiv.style.display = "block";
+gameDiv.style.width = gameWidth + "px";
+gameDiv.style.height = gameHeight + "px";
+targetz.style.left = positionLeft + "px";
+targetz.style.top = positionTop + "px";
 
 const playerMouse = prompt("Who's the person playing with the mouse ?");
 const playerKeyb = prompt("Who's the person playing with the keyboard ?");
@@ -26,11 +28,6 @@ const playerKeyb = prompt("Who's the person playing with the keyboard ?");
 mouseScore.innerHTML = playerMouse + " " + scoreMouse;
 keybScore.innerHTML = playerKeyb + " " + scoreKeyb;
 
-gameDiv.style.width = gameWidth + "px";
-gameDiv.style.height = gameHeight + "px";
-
-targetz.style.left = 0 + "px";
-targetz.style.top = 0 + "px";
 button.addEventListener("click", startGame);
 buttonReset.addEventListener("click", reset);
 buttonReload.addEventListener("click", reloadPlayer);
